@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@id/toolbar">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <com.github.florent37.shapeofview.shapes.ArcView
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:elevation="0dp"
+                app:shape_arc_height="20dp"
+                app:shape_arc_position="bottom"
+                app:shape_arc_cropDirection="outside"
+                >
+
+                <!-- YOUR CONTENT -->
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:background="@color/colorblack80"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_fuul_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/id_stu_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/id_reg_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/id_dept"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/id_program"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/id_batch_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+                            <TextView
+                                android:id="@+id/id_session"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/id_pre_semester"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/id_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/id_mob_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:padding="4dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.florent37.shapeofview.shapes.ArcView>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <include layout="@layout/content_scrolling" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/proImg1"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:elevation="4dp"
+        android:src="@drawable/pic"
+        app:civ_border_color="#159957"
+        app:civ_border_width="4dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|center"
+
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation" />
+
+</android.support.design.widget.CoordinatorLayout>

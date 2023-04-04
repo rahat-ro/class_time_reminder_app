@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/abc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <com.github.florent37.shapeofview.shapes.CutCornerView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/clipCorner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            app:shape_cutCorner_bottomRightSize="140dp">
+
+            <!-- YOUR CONTENT -->
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Sign In"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        app:alwaysShowHint="true"
+                        app:endIcon="@drawable/ic_id"
+                        app:errorColor="#FFFFFF"
+                        app:hasClearButton="true"
+                        app:helperText="INSERT YOUR STUDENT ID"
+                        app:helperTextColor="#FFFFFF"
+                        app:labelText="Student ID"
+                        app:manualValidateError="true"
+                        app:maxCharacters="12"
+                        app:primaryColor="#FFFFFF"
+                        app:useDenseSpacing="true"
+                        tools:ignore="MissingConstraints">
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edit_stu_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="119CSE000"
+                            android:inputType="text"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#BDFFF3" />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        app:alwaysShowHint="true"
+                        app:endIcon="@drawable/ic_password"
+                        app:errorColor="#FFFFFF"
+                        app:hasClearButton="true"
+                        app:helperText="ENTER YOUR PASSWORD"
+                        app:helperTextColor="#FFFFFF"
+                        app:labelText="Password"
+                        app:manualValidateError="true"
+                        app:maxCharacters="12"
+                        app:minCharacters="8"
+                        app:primaryColor="#FFFFFF"
+                        app:useDenseSpacing="true"
+                        tools:ignore="MissingConstraints">
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edit_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="XXXXXXXX"
+                            android:inputType="textPassword"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#BDFFF3" />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                    <Button
+                        android:id="@+id/btns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="16dp"
+                        android:text="Sign in" />
+
+                    <TextView
+                        android:id="@+id/join_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Join with us"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="4dp"
+                        android:layout_marginRight="18dp"
+                        android:text=" ---TMUiAN"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Forgotten account?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.github.florent37.shapeofview.shapes.CutCornerView>
+
+        <LinearLayout
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigLogDetail">
+
+    <LinearLayout
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="DB ID"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="FULL NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="STUDENT ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="REG. NO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="DEPT."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="PROGRAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="BATCH NO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="PRESENT SEMESTER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="EMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="MOBILE NO."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_fuul_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_stu_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_program"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_batch_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_pre_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:id="@+id/id_mob_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Change your password to continue your journey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

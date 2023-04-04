@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <android.support.v7.widget.CardView
+       android:layout_marginTop="44dp"
+       android:layout_marginLeft="2dp"
+       android:layout_marginRight="2dp"
+       android:layout_gravity="right"
+       android:id="@+id/card"
+       app:cardCornerRadius="2dp"
+       app:cardElevation="2dp"
+       android:layout_width="220dp"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:padding="4dp"
+           android:background="@drawable/border3"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_marginTop="44dp"
+               android:padding="2dp"
+               android:textSize="20dp"
+               android:id="@+id/r_teacher_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/colorPrimary"
+               android:padding="2dp"
+               android:textSize="16dp"
+               android:id="@+id/r_course_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:text="Course Code :"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:id="@+id/r_course_code"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:text="Credit hour :"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:id="@+id/r_credit_hour"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:text="Dept :"
+                   android:textSize="16dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:id="@+id/r_dept"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:text="Batch :"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:id="@+id/r_batch"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:text="Session :"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:padding="2dp"
+                   android:layout_weight="1"
+                   android:textSize="16dp"
+                   android:id="@+id/r_sesson"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </android.support.v7.widget.CardView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/proImg1"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:elevation="4dp"
+        android:src="@drawable/pic"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+        app:layout_anchor="@id/card"
+        app:layout_anchorGravity="top|left"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/card"
+        app:layout_anchorGravity="top|end"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
